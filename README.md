@@ -23,5 +23,6 @@ Status Saver for WhatsApp - Download &amp; Share
 #### No Ads:
 - Enjoy an ad-free experience while using the app, without interruptions or distractions.
 
-- Status Saver for WhatsApp is the ultimate solution for WhatsApp users who want to keep a collection of their favorite statuses effortlessly. Download the app now and start saving and sharing WhatsApp statuses like never before!
+
+Status Saver for WhatsApp is the ultimate solution for WhatsApp users who want to keep a collection of their favorite statuses effortlessly. Download the app now and start saving and sharing WhatsApp statuses like never before!
 
