@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WhatsApp Status Downloader</string>
+    <string name="image_description">Image Description for WhatsApp Status Downloader</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="welcome">Welcome\nTo\nWhatsApp Status Downloader</string>
 </resources>
