@@ -36,15 +36,11 @@ class SettingsAdapter(var list: ArrayList<SettingsModel>, var context: Context) 
                                 dialog.dismiss()
                             }
                             dialog.setContentView(dialogBinding.root)
-
                             dialog.window?.setLayout(
                                 ActionBar.LayoutParams.MATCH_PARENT,
                                 ActionBar.LayoutParams.WRAP_CONTENT
                             )
-
                             dialog.show()
-
-
                         }
 
                         2 -> {

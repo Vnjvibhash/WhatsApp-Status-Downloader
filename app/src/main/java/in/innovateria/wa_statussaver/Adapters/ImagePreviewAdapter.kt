@@ -23,14 +23,13 @@ class ImagePreviewAdapter (val list: ArrayList<MediaModel>, val context: Context
                     .load(mediaModel.pathUri.toUri())
                     .into(zoomableImageView)
 
-                val downloadImage = if (mediaModel.isDownloaded) {
-                    R.drawable.ic_downloaded
+                if (mediaModel.isDownloaded) {
+                    tools.statusDownload.setImageResource(R.drawable.ic_downloaded)
+                    tools.statusDownloadText.setText(R.string.saved)
                 } else {
-                    R.drawable.ic_download
+                    tools.statusDownload.setImageResource(R.drawable.ic_download)
+                    tools.statusDownloadText.setText(R.string.save)
                 }
-                tools.statusDownload.setImageResource(downloadImage)
-
-
 
                 tools.download.setOnClickListener {
                     val isDownloaded = context.saveStatus(mediaModel)
@@ -39,6 +38,7 @@ class ImagePreviewAdapter (val list: ArrayList<MediaModel>, val context: Context
                         Toast.makeText(context, "Saved", Toast.LENGTH_SHORT).show()
                         mediaModel.isDownloaded = true
                         tools.statusDownload.setImageResource(R.drawable.ic_downloaded)
+                        tools.statusDownloadText.setText(R.string.saved)
                     } else {
                         // unable to download status
                         Toast.makeText(context, "Unable to Save", Toast.LENGTH_SHORT).show()

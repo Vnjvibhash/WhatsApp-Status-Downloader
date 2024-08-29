@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Status"
+        android:title="WhatsApp"
         android:id="@+id/menu_status"
-        android:icon="@drawable/ic_menu_wp_status"/>
+        android:icon="@drawable/ic_wp_status"/>
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="B Status"
+        android:title="WhatsApp Business"
         android:id="@+id/menu_business_status"
-        android:icon="@drawable/ic_menu_wp_status"/>
+        android:icon="@drawable/ic_w4b_status"/>
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Settings"
+        android:title="@string/settings"
         android:id="@+id/menu_settings"
-        android:icon="@drawable/ic_menu_settings"/>
+        android:icon="@drawable/ic_settings"/>
 </menu>

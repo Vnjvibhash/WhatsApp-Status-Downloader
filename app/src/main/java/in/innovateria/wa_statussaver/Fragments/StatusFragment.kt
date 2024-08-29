@@ -48,17 +48,12 @@ class StatusFragment : Fragment() {
 
                 when (type) {
                     Constants.TYPE_WHATSAPP_MAIN -> {
-                        // check permission
-                        // granted then fetch statuses
-                        // get permission
-                        // fetch statuses
                         val isPermissionGranted = SharedPrefUtils.getPrefBoolean(
                             SharedPrefKeys.PREF_KEY_WP_PERMISSION_GRANTED,
                             false
                         )
                         if (isPermissionGranted) {
                             getWhatsAppStatuses()
-
                             binding.swipeRefreshLayout.setOnRefreshListener {
                                 refreshStatuses()
                             }
@@ -71,14 +66,11 @@ class StatusFragment : Fragment() {
                                 initialUri = Constants.getWhatsappUri()
                             )
                         }
-
-
                         val viewPagerAdapter = MediaViewPagerAdapter(requireActivity())
                         statusViewPager.adapter = viewPagerAdapter
                         TabLayoutMediator(tabLayout, statusViewPager) { tab, pos ->
                             tab.text = viewPagerTitles[pos]
                         }.attach()
-
                     }
 
                     Constants.TYPE_WHATSAPP_BUSINESS -> {
@@ -88,7 +80,6 @@ class StatusFragment : Fragment() {
                         )
                         if (isPermissionGranted) {
                             getWhatsAppBusinessStatuses()
-
                             binding.swipeRefreshLayout.setOnRefreshListener {
                                 refreshStatuses()
                             }
