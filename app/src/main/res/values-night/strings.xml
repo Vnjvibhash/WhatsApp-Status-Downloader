@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="image_description">Image Description for WhatsApp Status Downloader</string>
+    <string name="status">Status</string>
+    <string name="b_status">B Status</string>
+    <string name="settings">Settings</string>
 </resources>
