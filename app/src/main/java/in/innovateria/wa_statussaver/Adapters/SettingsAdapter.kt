@@ -50,14 +50,16 @@ class SettingsAdapter(var list: ArrayList<SettingsModel>, var context: Context) 
                         2 -> {
                             MaterialAlertDialogBuilder(context).apply {
                                 setTitle("Disclaimer")
-                                setMessage("Disclaimer Here")
+                                setMessage("This app is intended for personal use only. WhatsApp is a trademark of WhatsApp Inc., and this app is not affiliated with, endorsed, or sponsored by WhatsApp Inc. \n" +
+                                        "Please respect the privacy and intellectual property rights of others. Do not download, share, or distribute any content without permission from the owner. The creator of this app is not responsible for any misuse or legal issues that may arise from the use of this app.\n" +
+                                        "By using this app, you agree to comply with all relevant laws and regulations regarding the downloading and sharing of content.")
                                 setPositiveButton("Okay",null)
                                 show()
                             }
                         }
 
                         3 -> {
-                            Intent(Intent.ACTION_VIEW, Uri.parse("https://atrii.dev")).apply {
+                            Intent(Intent.ACTION_VIEW, Uri.parse("https://vivekajee.in")).apply {
                                 context.startActivity(this)
                             }
 
