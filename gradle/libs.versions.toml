@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.0-alpha08"
+agp = "8.8.0-alpha01"
 designVersion = "28.0.0"
 documentfile = "1.0.1"
 fragmentKtx = "1.8.2"
