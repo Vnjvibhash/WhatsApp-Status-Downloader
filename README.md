@@ -29,10 +29,15 @@ Every time I update my WhatsApp status, my friends ask me to send them that stat
 4. Tap the download button to save them to your device.
 
 ## Screenshots
-*(Add screenshots here to showcase the app's interface and functionality.)*
-
-![Screenshot 1](path/to/screenshot1.png)
-![Screenshot 2](path/to/screenshot2.png)
+*Below are the screenshots showcasing the app's interface and functionality.*
+<div style="display: grid; grid-template-columns: repeat(3, 200px); grid-template-rows: repeat(2, 50px); gap: 10px;">
+    <img src="assets/image0.png" alt="Screenshot 1" style="width: 200px; height: 500px; object-fit: cover;">
+    <img src="assets/image01.png" alt="Screenshot 2" style="width: 200px; height: 500px; object-fit: cover;">
+    <img src="assets/image1.png" alt="Screenshot 3" style="width: 200px; height: 500px; object-fit: cover;">
+    <img src="assets/image2.png" alt="Screenshot 4" style="width: 200px; height: 500px; object-fit: cover;">
+    <img src="assets/image3.png" alt="Screenshot 5" style="width: 200px; height: 500px; object-fit: cover;">
+    <img src="assets/image4.png" alt="Screenshot 6" style="width: 200px; height: 500px; object-fit: cover;">
+</div>
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to fork the repository and submit a pull request. Let's make this app even better together!
