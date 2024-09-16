@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     R.id.menu_settings -> {
-                        replaceFragment(SettingsFragment())
+                        replaceFragment(SettingsFragment(), addToBackStack = false)
                     }
                 }
                 true

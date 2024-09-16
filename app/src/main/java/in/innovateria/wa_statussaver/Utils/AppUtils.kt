@@ -7,14 +7,18 @@ import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
 import `in`.innovateria.wa_statussaver.R
 
-fun Activity.replaceFragment(fragment: Fragment, args: Bundle? = null) {
+fun Activity.replaceFragment(fragment: Fragment, args: Bundle? = null, addToBackStack: Boolean = true) {
     val fragmentActivity = this as FragmentActivity
-    fragmentActivity.supportFragmentManager.beginTransaction().apply {
-        setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-        args?.let {
-            fragment.arguments = it
-        }
-        replace(R.id.frameLayout, fragment)
-        addToBackStack(null)
-    }.commit()
+    val transaction = fragmentActivity.supportFragmentManager.beginTransaction()
+
+    transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+    args?.let {
+        fragment.arguments = it
+    }
+    transaction.replace(R.id.frameLayout, fragment)
+    if (addToBackStack) {
+        transaction.addToBackStack(null)
+    }
+    transaction.commit()
 }
+
