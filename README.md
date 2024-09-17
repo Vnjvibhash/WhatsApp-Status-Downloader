@@ -14,7 +14,11 @@ Every time I update my WhatsApp status, my friends ask me to send them that stat
 - **No Login Required:** Direct access to your saved statuses without needing to log in.
 - **Built with Kotlin:** The app is developed using Kotlin, ensuring robust and modern Android development practices.
 
-## Installation
+## Install this App from Google PayStore.
+
+[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=in.innovateria.wa_statussaver)
+
+## Implement it Locally.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Vnjvibhash/WhatsApp-Status-Downloader.git
