@@ -38,10 +38,16 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             splashLogic()
             requestPermission()
-            val whatsAppStatusFragment = StatusFragment()
-            val bundle = Bundle()
-            bundle.putString(Constants.FRAGMENT_TYPE_KEY, Constants.TYPE_WHATSAPP_MAIN)
-            replaceFragment(whatsAppStatusFragment, bundle)
+
+            if (savedInstanceState != null) {
+                val selectedMenuItem = savedInstanceState.getInt("selected_menu_item")
+                BottomNavMenu.selectedItemId = selectedMenuItem
+            } else {
+                val whatsAppStatusFragment = StatusFragment()
+                val bundle = Bundle()
+                bundle.putString(Constants.FRAGMENT_TYPE_KEY, Constants.TYPE_WHATSAPP_MAIN)
+                replaceFragment(whatsAppStatusFragment, bundle)
+            }
 
             BottomNavMenu.setOnItemSelectedListener { item ->
                 when (item.itemId) {
@@ -66,6 +72,11 @@ class MainActivity : AppCompatActivity() {
                 true
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("selected_menu_item", binding.BottomNavMenu.selectedItemId)
     }
 
     private fun requestPermission() {
