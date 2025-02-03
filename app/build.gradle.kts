@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "in.innovateria.wa_statussaver"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         buildFeatures{
@@ -14,9 +14,9 @@ android {
         }
         applicationId = "in.innovateria.wa_statussaver"
         minSdk = 21
-        targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.1"
+        targetSdk = 35
+        versionCode = 5
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,11 +31,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_19
+        targetCompatibility = JavaVersion.VERSION_19
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "19"
     }
 }
 
