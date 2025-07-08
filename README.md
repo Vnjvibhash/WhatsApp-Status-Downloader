@@ -16,7 +16,9 @@ Every time I update my WhatsApp status, my friends ask me to send them that stat
 
 ## Install this App from Google PayStore.
 
-[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=in.innovateria.wa_statussaver)
+[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/dev?id=7465684407391262508)
+
+[<img alt="Download App" height="80" src="https://openclipart.org/download/169662/green-download-button.svg">](https://github.com/Vnjvibhash/WhatsApp-Status-Downloader/blob/main/app/release/app-release.apk)
 
 ## Implement it Locally.
 1. Clone the repository:
